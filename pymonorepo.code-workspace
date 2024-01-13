@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "root"
+		},
+		{
+			"path": "frontend"
+		},
+		{
+			"path": "backend/web",
+			"name": "backend-web"
+		},
+		{
+			"path": "backend/service",
+			"name": "backend-service"
+		},
+		{
+			"path": "backend/domain",
+			"name": "backend-domain"
+		}
+	]
+}
