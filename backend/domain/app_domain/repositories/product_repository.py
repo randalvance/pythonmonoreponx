@@ -1,6 +1,10 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
+
+from app_domain.entities import Product
+
+__all__ = ["ProductRepository"]
 
 class ProductRepository(ABC):
-    @abstractclassmethod
-    def get_all(self):
+    @abstractmethod
+    def get_all(self) -> list[Product]:
         pass

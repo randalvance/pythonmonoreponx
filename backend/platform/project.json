@@ -1,14 +1,14 @@
 {
-  "name": "service",
+  "name": "platform",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "backend/service/src",
+  "sourceRoot": "{projectRoot}/app_platform",
   "targets": {
     "lock": {
       "executor": "@nxlv/python:run-commands",
       "options": {
         "command": "poetry lock --no-update",
-        "cwd": "backend/service"
+        "cwd": "{projectRoot}"
       }
     },
     "add": {
@@ -27,7 +27,7 @@
       "executor": "@nxlv/python:build",
       "outputs": ["{projectRoot}/dist"],
       "options": {
-        "outputPath": "backend/service/dist",
+        "outputPath": "backend/platform/dist",
         "publish": false,
         "lockedVersions": true,
         "bundleLocalDependencies": true
@@ -45,20 +45,19 @@
     },
     "lint": {
       "executor": "@nxlv/python:flake8",
-      "outputs": ["{workspaceRoot}/reports/backend/service/pylint.txt"],
-      "options": {
-        "outputFile": "reports/backend/service/pylint.txt"
-      }
+      "outputs": ["{workspaceRoot}/reports/backend/platform/pylint.txt"],
+      "options": {}
     },
+    "pytypes": {},
     "test": {
       "executor": "@nxlv/python:run-commands",
       "outputs": [
-        "{workspaceRoot}/reports/backend/service/unittests",
-        "{workspaceRoot}/coverage/backend/service"
+        "{workspaceRoot}/reports/backend/platform/unittests",
+        "{workspaceRoot}/coverage/backend/platform"
       ],
       "options": {
         "command": "poetry run pytest tests/",
-        "cwd": "backend/service"
+        "cwd": "{projectRoot}"
       }
     }
   },

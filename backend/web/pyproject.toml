@@ -36,8 +36,15 @@ pytest = "7.3.1"
 pytest-sugar = "0.9.7"
 pytest-cov = "4.1.0"
 pytest-html = "3.2.0"
-uvicorn = {extras = ["standard"], version = "^0.25.0"}
+mypy = "^1.8.0"
+
+  [tool.poetry.group.dev.dependencies.uvicorn]
+  extras = [ "standard" ]
+  version = "^0.25.0"
 
 [build-system]
 requires = [ "poetry-core" ]
 build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+disable_error_code = "type-abstract"

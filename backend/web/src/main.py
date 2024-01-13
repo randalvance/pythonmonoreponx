@@ -9,7 +9,7 @@ from app_platform.repositories import ProductRepositoryImpl
 app = FastAPI()
 
 injector = Injector()
-injector.binder.bind(ProductRepository, ProductRepositoryImpl())
+injector.binder.bind(ProductRepository, ProductRepositoryImpl)
 attach_injector(app, injector)
 
 @app.get("/")

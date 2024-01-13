@@ -1,6 +1,8 @@
 from app_domain.entities import Product
 from app_domain.repositories import ProductRepository
 
+__all__ = ["ProductRepositoryImpl"]
+
 class ProductRepositoryImpl(ProductRepository):
     def get_all(self):
         return [

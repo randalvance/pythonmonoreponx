@@ -1,1 +1,1 @@
-from .product_repository_impl import ProductRepositoryImpl
+from .product_repository_impl import *

@@ -59,6 +59,7 @@
         "outputFile": "reports/backend/web/pylint.txt"
       }
     },
+    "pytypes": {},
     "test": {
       "executor": "@nxlv/python:run-commands",
       "outputs": [

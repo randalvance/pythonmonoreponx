@@ -1,1 +1,1 @@
-from .get_products_usecase import GetProductsUseCase
+from .get_products_usecase import *

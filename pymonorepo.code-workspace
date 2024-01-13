@@ -20,15 +20,21 @@
 			"name": "backend/domain"
 		}
 	],
-	"settings": {
-		"python.terminal.activateEnvInCurrentTerminal": false,
-		"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
-	},
 	"extensions": {
 		"recommendations": [
 			"nrwl.angular-console",
 			"esbenp.prettier-vscode",
 			"dbaeumer.vscode-eslint"
 		]
+	},
+	"settings": {
+		"isort.interpreter": ["${workspaceFolder}/backend/web/.venv/bin/python"],
+		"python.analysis.typeCheckingMode": "basic",
+		"python.terminal.activateEnvInCurrentTerminal": false,
+		"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+		"mypy-type-checker.interpreter": [
+			"${workspaceFolder}/backend/web/.venv/bin/python"
+		],
+		"mypy-type-checker.importStrategy": "fromEnvironment"
 	}
 }

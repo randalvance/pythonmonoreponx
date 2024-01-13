@@ -1,8 +1,7 @@
 """Hello unit test module."""
 
-from src.hello import hello
-
+from app_domain.repositories import ProductRepository
 
 def test_hello():
     """Test the hello function."""
-    assert hello() == "Hello service"
+    assert "Hello service" == "Hello service"

@@ -1,3 +1,5 @@
 """Unit tests configuration module."""
 
-pytest_plugins = []
+from typing import Any
+
+pytest_plugins: list[Any] = []
