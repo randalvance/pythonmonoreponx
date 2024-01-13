@@ -43,6 +43,15 @@
         "debug": false
       }
     },
+    "start": {
+      "executor": "@nxlv/python:run-commands",
+      "dependsOn": ["build"],
+      "outputs": [],
+      "options": {
+        "command": "poetry run uvicorn src.main:app --host 0.0.0.0 --port 8080",
+        "cwd": "backend/web"
+      }
+    },
     "lint": {
       "executor": "@nxlv/python:flake8",
       "outputs": ["{workspaceRoot}/reports/backend/web/pylint.txt"],
