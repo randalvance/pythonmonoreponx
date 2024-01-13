@@ -10,11 +10,11 @@ Python monorepo with NX. This was based from this article:
 
 ## Commands
 - Adding an external dependency
-    ```
-    npx nx run <project>:add --name <package-name>
+    ```bash
+    nx run <project>:add --name <package-name>
     ```
 - Adding a local dependency
-    ```
+    ```bash
     nx run <project>:add --name <other-project> --local
     ```
 - Adding a new python library
