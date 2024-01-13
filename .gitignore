@@ -39,5 +39,6 @@ testem.log
 Thumbs.db
 
 .nx/cache
+.cache
 
 __pycache__

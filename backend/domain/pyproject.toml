@@ -18,10 +18,12 @@ license = 'Proprietary'
 readme = 'README.md'
 
   [[tool.poetry.packages]]
-  include = "src"
+  include = "app_domain"
 
   [tool.poetry.dependencies]
   python = ">=3.9,<3.11"
+  pydantic = "^2.5.3"
+  injector = "^0.21.0"
 
   [tool.poetry.group.dev.dependencies]
   autopep8 = "2.0.2"

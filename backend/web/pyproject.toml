@@ -23,9 +23,10 @@ readme = "README.md"
   [tool.poetry.dependencies]
   python = ">=3.9,<3.11"
   fastapi = "^0.109.0"
+  fastapi-injector = "^0.5.3"
 
-    [tool.poetry.dependencies.backend-service]
-    path = "../service"
+    [tool.poetry.dependencies.backend-platform]
+    path = "../platform"
     develop = true
 
 [tool.poetry.group.dev.dependencies]

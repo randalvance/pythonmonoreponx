@@ -12,8 +12,8 @@
 			"name": "backend/web"
 		},
 		{
-			"path": "backend/service",
-			"name": "backend/service"
+			"path": "backend/platform",
+			"name": "backend/platform"
 		},
 		{
 			"path": "backend/domain",
@@ -21,7 +21,8 @@
 		}
 	],
 	"settings": {
-		"python.terminal.activateEnvInCurrentTerminal": false
+		"python.terminal.activateEnvInCurrentTerminal": false,
+		"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
 	},
 	"extensions": {
 		"recommendations": [
