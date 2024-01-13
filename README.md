@@ -9,9 +9,15 @@ Python monorepo with NX. This was based from this article:
     - `npm install --global nx@latest`
 
 ## Local Development
-```
-npm start
-```
+At the root of the folder:
+- Install dependencies
+  ```bash
+  npm install
+  ```
+- Run the app
+  ```bash
+  npm start
+  ```
 Access the app at [http://localhost:4200](http://localhost:4200)
 
 ## Commands
