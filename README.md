@@ -8,6 +8,12 @@ Python monorepo with NX. This was based from this article:
 - Install `nx` globally
     - `npm install --global nx@latest`
 
+## Local Development
+```
+npm start
+```
+Access the app at [http://localhost:4200](http://localhost:4200)
+
 ## Commands
 - Adding an external dependency
     ```bash

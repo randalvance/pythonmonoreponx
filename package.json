@@ -2,7 +2,9 @@
   "name": "pymonorepo",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx run-many -t start"
+  },
   "private": true,
   "devDependencies": {
     "@emotion/babel-plugin": "11.11.0",
