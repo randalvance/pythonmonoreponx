@@ -11,4 +11,4 @@ class GetProductsUseCase:
         self.product_repository = product_repository
 
     def execute(self) -> list[Product]:
-        return self.product_repository.get_all()
+        return self.product_repository.get_all(-=)
