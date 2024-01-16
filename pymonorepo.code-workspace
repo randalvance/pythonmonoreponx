@@ -8,6 +8,10 @@
 			"path": "frontend"
 		},
 		{
+			"path": "frontend-shared",
+			"name": "frontend/shared"
+		},
+		{
 			"path": "backend/web",
 			"name": "backend/web"
 		},
