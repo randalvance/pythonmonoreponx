@@ -33,16 +33,6 @@
         "bundleLocalDependencies": true
       }
     },
-    "install": {
-      "executor": "@nxlv/python:install",
-      "options": {
-        "silent": false,
-        "args": "",
-        "cacheDir": ".cache/pypoetry",
-        "verbose": false,
-        "debug": false
-      }
-    },
     "start": {
       "executor": "@nxlv/python:run-commands",
       "dependsOn": ["build"],

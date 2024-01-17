@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "install": "nx run-many -t install && poetry install",
     "start": "nx run-many -t start",
     "types": "nx run-many -t pytypes"
   },

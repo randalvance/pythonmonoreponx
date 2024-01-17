@@ -33,16 +33,6 @@
         "bundleLocalDependencies": true
       }
     },
-    "install": {
-      "executor": "@nxlv/python:install",
-      "options": {
-        "silent": false,
-        "args": "",
-        "cacheDir": ".cache/pypoetry",
-        "verbose": false,
-        "debug": false
-      }
-    },
     "lint": {
       "executor": "@nxlv/python:flake8",
       "outputs": ["{workspaceRoot}/reports/backend/domain/pylint.txt"],
